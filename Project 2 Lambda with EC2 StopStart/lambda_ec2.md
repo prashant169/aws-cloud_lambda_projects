@@ -1,4 +1,4 @@
-[Step-by-Step] How to start & stop AWS EC2 automatically using Lambda & EventBridge
+#[Step-by-Step] How to start & stop AWS EC2 automatically using Lambda & EventBridge
 
 Introduction
 In this tutorial, we are going to automate starting and stopping EC2 via Lambda & EventBridge at regular intervals (e.g.running EC2 from 8:00 am to 8:00 pm). While the EC2 is stopped, we can save the compute cost during this time.
