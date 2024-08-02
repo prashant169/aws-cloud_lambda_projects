@@ -1,11 +1,21 @@
-#[Step-by-Step] How to start & stop AWS EC2 automatically using Lambda & EventBridge
+#How to start & stop AWS EC2 automatically using Lambda & EventBridge
+# Stop EC2 Instances Automatically with AWS Lambda
+![image](https://github.com/user-attachments/assets/69a5b678-11e2-48ef-8e8a-df7c14657e35)
+
+Scenario
+
+Your managers are unhappy about the increasing expenses associated with three EC2 instances left running after the DevOps engineers have clocked out for the day. These EC2 instances are used in the development lab to test your company’s application releases.
 
 Introduction
-In this tutorial, we are going to automate starting and stopping EC2 via Lambda & EventBridge at regular intervals (e.g.running EC2 from 8:00 am to 8:00 pm). While the EC2 is stopped, we can save the compute cost during this time.
+
+In this tutorial, we are going to automate starting and stopping EC2 via Lambda & EventBridge at regular intervals (e.g.running EC2 from 7:00 am to 7:00 pm). While the EC2 is stopped, we can save the compute cost during this time.
 In order to let Lambda be able to start and stop the EC2 instance, we first need to assign the required IAM permission for lambda in Step1.
 Once it is done, we can create two lambda functions, which the first one is for starting the EC2 and the second one is for stopping the EC2. After that, we can create the EventBridge Schedule to trigger the lambda function at the desired times.-------------------------------------------*
 
+
 Step Summary:
+
+|| Basic knowledge of boto3 || AWS account || Running EC2 instances ||
 
 Step 1: Create IAM role for Lambda
 
